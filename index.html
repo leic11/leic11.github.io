@@ -119,7 +119,7 @@
         window.setTimeout("show_date_time()", 1000);
         BirthDay = new Date("5/29/2004");//这个日期是可以修改的
         today = new Date();
-        timeold = (today.getTime() - BirthDay.getTime());
+        timeold = (BirthDay.getTime() - today.getTime());
         sectimeold = timeold / 1000
         secondsold = Math.floor(sectimeold);
         msPerDay = 24 * 60 * 60 * 1000
