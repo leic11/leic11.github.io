@@ -117,7 +117,7 @@
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("5/29/2004");//这个日期是可以修改的
+        BirthDay = new Date("6/7/2023");//这个日期是可以修改的
         today = new Date();
         timeold = (BirthDay.getTime() - today.getTime());
         sectimeold = timeold / 1000
@@ -130,7 +130,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" ;
     }
 
     show_date_time();
@@ -141,7 +141,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("^-^|曦曦|星光不问赶路人|时光不负有心人|付出|终有收获|努力|会有结果|信心|绝对重要|高考将至|在此|送上祝福|愿你|金榜题名！|成就|大学之梦！|我相信你|一定能行！|祝|高考大捷！|^-^");
+            S.UI.simulate("曦曦|^-^|星光不问赶路人|时光不负有心人|付出|终有收获|努力|会有结果|信心|绝对重要|高考将至|在此|送上祝福|愿你|金榜题名！|成就大学之梦！|相信你|一定能行！|祝|高考大捷！|^-^");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
